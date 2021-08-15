@@ -1,0 +1,27 @@
+body {
+    background: gray;
+}
+h2 {
+    text-align: center;
+    color: white;
+    font-weight: bolder;
+    margin: 0 auto;
+}
+
+span {
+    animation-fill-mode: both;
+    animation-direction: normal;
+    animation-duration: 1.5s;
+}
+
+@keyframes loadingAnimation {
+    0% {
+        font-size: inherit;
+    }
+    50% {
+        font-size: xx-large;
+    }
+    100% {
+        font-size: inherit;
+    }
+}
