@@ -14,6 +14,10 @@ span {
     animation-duration: 1.5s;
 }
 
+.fadeTextClass > * {
+    opacity: 0;
+}
+
 @keyframes loadingAnimation {
     0% {
         font-size: inherit;
@@ -23,5 +27,32 @@ span {
     }
     100% {
         font-size: inherit;
+    }
+}
+
+@keyframes danceColor {
+    0% {
+        font-size: inherit;
+        color: red;
+    }
+    50% {
+        font-size: xx-large;
+        color: yellow;
+    }
+    100% {
+        font-size: inherit;
+        color: blue;
+    }
+}
+
+@keyframes fadeText {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0.8;
+    }
+    100% {
+        opacity: 1
     }
 }

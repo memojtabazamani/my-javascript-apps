@@ -2,16 +2,17 @@ console.log("That Work!");
 
 $(function() {
 
-    const parentElm = $("#loading");
+    const parentElm = $("#loading2");
+    const animationName = "fadeText";
+    const increamentOfCounter = 0.5;
 
     const childs = parentElm.find('span');
-    console.log(childs);
 
     let delayAnimation = 0;
     childs.map((child) => {
         const elm = childs[child];
-        $(elm).css({"animation-name": "loadingAnimation", "animation-delay": delayAnimation + "s"});
-        delayAnimation+= 0.3;
-    })
+        $(elm).css({"animation-name": animationName, "animation-delay": delayAnimation + "s"});
+        delayAnimation+= increamentOfCounter;
+    });
 
 })
