@@ -2,9 +2,9 @@ console.log("That Work!");
 
 $(function() {
 
-    const parentElm = $("#loading2");
-    const animationName = "fadeText";
-    const increamentOfCounter = 0.5;
+    const parentElm = $("#loading3");
+    const animationName = "bluredText";
+    const increamentOfCounter = 0.3;
 
     const childs = parentElm.find('span');
 

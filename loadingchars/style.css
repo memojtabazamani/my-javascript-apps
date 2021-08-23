@@ -14,9 +14,11 @@ span {
     animation-duration: 1.5s;
 }
 
-.fadeTextClass > * {
+.fadeTextClass > *,
+.blurTextClass > *  {
     opacity: 0;
 }
+
 
 @keyframes loadingAnimation {
     0% {
@@ -53,6 +55,22 @@ span {
         opacity: 0.8;
     }
     100% {
+        opacity: 1
+    }
+}
+
+/* blur and fade animation css */
+@keyframes bluredText { 
+    0% {
+        filter: blur(10px);
+        opacity: 0;
+    }
+    50% {
+        filter: blur(5px);
+        opacity: 0.8;
+    }
+    100% {
+        filter: blur(0px);
         opacity: 1
     }
 }
